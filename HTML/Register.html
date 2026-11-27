@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+    <link rel="stylesheet" href="../CSS/auth.css">
+</head>
+<body>
+    <div class="auth-card">
+        <h1>ลงทะเบียน</h1>
+        <form id="registerForm" novalidate>
+            <label for="fullname">ชื่อ-นามสกุล</label>
+            <input type="text" name="fullname" id="fullname" required>
+
+            <label for="username">ชื่อผู้ใช้</label>
+            <input type="text" name="username" id="username" autocomplete="username" required>
+
+            <label for="birthDate">วันเดือนปีเกิด</label>
+            <input type="date" name="birthDate" id="birthDate" required>
+
+            <label for="age">อายุ</label>
+            <input type="number" name="age" id="age" readonly>
+
+            <label for="studentId">รหัสประจำตัวนักศึกษา</label>
+            <input type="text" name="studentId" id="studentId" required>
+
+            <label for="email">อีเมล</label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password" id="password" minlength="6" autocomplete="new-password" required>
+
+            <label for="confirmPassword">ยืนยันรหัสผ่าน</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" minlength="6" autocomplete="new-password" required>
+
+            <p id="registerMessage" class="message"></p>
+            <div class="button-row">
+                <button type="submit" class="btn btn-primary">ลงทะเบียน</button>
+                <button type="reset" class="btn">ล้างข้อมูล</button>
+            </div>
+        </form>
+        <p class="link-text">มีบัญชีอยู่แล้ว? <a href="Login.html">เข้าสู่ระบบ</a></p>
+    </div>
+    <script src="../JavaScript/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="../CSS/auth.css">
+</head>
+<body>
+    <div class="auth-card">
+        <h1>เข้าสู่ระบบ</h1>
+        <form id="loginForm" novalidate>
+            <label for="username">ชื่อผู้ใช้</label>
+            <input type="text" name="username" id="username" autocomplete="username" required>
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" name="password" id="password" autocomplete="current-password" required>
+
+            <p id="loginMessage" class="message"></p>
+            <button type="submit" class="btn btn-primary full-width">เข้าสู่ระบบ</button>
+        </form>
+        <p class="link-text">ยังไม่มีบัญชี? <a href="Register.html">ลงทะเบียน</a></p>
+    </div>
+    <script src="../JavaScript/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f3f6ff">
+    <title>แดชบอร์ด</title>
+    <link rel="stylesheet" href="../CSS/dashboard.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="Dashoard.html" aria-label="หน้าหลักแดชบอร์ด">
+            <span class="brand-mark" aria-hidden="true">C</span>
+            <span>ห้องเรียนของฉัน</span>
+        </a>
+        <a class="logout-link" href="Login.html">ออกจากระบบ</a>
+    </header>
+
+    <main class="dashboard">
+        <section class="welcome-panel" aria-labelledby="welcomeTitle">
+            <p class="eyebrow">STUDENT DASHBOARD</p>
+            <h1 id="welcomeTitle">ยินดีต้อนรับ<span id="studentName"></span></h1>
+            <p class="welcome-copy">พร้อมเรียนรู้สิ่งใหม่แล้วหรือยัง? เลือกบทเรียนที่สนใจได้เลย</p>
+        </section>
+
+        <section class="course-section" aria-labelledby="courseHeading">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">เริ่มต้นการเรียนรู้</p>
+                    <h2 id="courseHeading">บทเรียนของคุณ</h2>
+                </div>
+                <span class="course-count">1 บทเรียน</span>
+            </div>
+
+            <article class="course-card">
+                <div class="course-art" aria-hidden="true">
+                    <span>🐶</span>
+                    <span>🐱</span>
+                </div>
+                <div class="course-content">
+                    <p class="course-category">แบบทดสอบ · ใช้เวลาประมาณ 2 นาที</p>
+                    <h3>คุณเหมือนหมาหรือแมว?</h3>
+                    <p class="course-description">ตอบคำถามสั้น ๆ เพื่อค้นหาบุคลิกของคุณ แล้วมาดูผลลัพธ์กัน</p>
+                    <div class="course-actions">
+                        <button class="btn btn-primary" id="registerButton" type="button">ลงทะเบียนเรียน</button>
+                        <a class="btn btn-secondary" href="Quiz.html">ดูบทเรียน</a>
+                    </div>
+                    <p class="registration-message" id="registrationMessage" role="status" aria-live="polite"></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">เรียนรู้ได้ทุกวัน ในแบบของคุณ</footer>
+    <script src="../JavaScript/dashboard.js"></script>
+</body>
+</html>
